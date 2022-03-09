@@ -16,6 +16,7 @@ module.exports={
 	
 	module:{
 		rules:[
+			//html loader
 				{
 					test:/\.html$/,
 					use:
@@ -28,17 +29,22 @@ module.exports={
 						}
 					]
 				},
-
+			//css loader	
 				{
 					test:/\.css$/,
 					use:
 					[
-						MiniCssExtractPlugin.loader,
-						'css-loader'
+						{
+							loader:MiniCssExtractPlugin.loader,
+							options:{
+								publicPath:'../',
+							},
+						},
+						'css-loader',
 					]
 		
 				},
-
+			//img loader
 				{
 					test:/\.(png|svg|jpe?g|gif)$/,
 					use:[
@@ -51,6 +57,28 @@ module.exports={
 						}
 					]
 				},
+			//fonts loader
+				{
+					test: /\.(svg|eot|woff|woff2|ttf)$/,
+					use: [
+					  {
+						loader: "file-loader", 
+						options: {
+						  name: '[name].[ext]',
+						  outputPath: "fonts",
+						  esModule: false,
+						}
+					  }
+					]
+				},
+			//jquerry loader
+				{
+					test: require.resolve("jquery"),
+					loader: "expose-loader",
+					options: {
+					  exposes: ["$", "jQuery"],
+					},
+				  },
 			]
 		},
 
