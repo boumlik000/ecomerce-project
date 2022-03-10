@@ -379,3 +379,90 @@ h3.custom-heading{
     border-top: 1px solid #eef0ea;
     padding-top: 25px;
 }
+/*footer*/
+#brand-logos{
+    background-color: #bde7fa;
+    padding: 25px 0;
+    color: #555555;
+}
+#brand-logos img{
+    margin: 0 25px;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+#footer-nav{
+    background-color: #1f1e1e;
+    width: 100%;
+    padding: 50px 0 40px;
+    background-image: url(../images/bg_footer_1.png),url(../images/bg_footer_2.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 110% 0,-10% -150%;
+}
+#footer-nav-links{
+    margin: 30px 0;
+}
+#footer-nav-links a{
+    color: #555 !important;
+    margin-left: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+#footer-nav .custom-form{
+    border-top: 1px solid #5d5d5d;
+}
+.custom-form.offset-3{
+    margin-right: 25%;
+}
+#footer-nav  form{
+    max-width: 260px;
+    margin: auto;
+}
+
+input[type=email]{
+    direction: rtl;
+    text-align: right;
+    color: #fff;
+    
+}
+input[type=email]:focus{
+    color: #fff;
+}
+input[type=email]::placeholder{
+    color: #fff;
+}
+#footer-nav form label{
+    margin: 27px 0 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555555;
+}
+.custom-btn-primary2{
+    color: #000;
+    background-color: #f8ad47;
+    border-color: #f8ad47;
+    
+}
+.custom-btn-primary2:hover,
+.custom-btn-primary2:active,
+.custom-btn-primary2:focus,
+.custom-btn-primary2:active:focus,
+.custom-btn-primary2:active:hover{
+    color: #000;
+    background-color: #b86d07;
+    border-color: #b86d07;
+}
+#newsletter form input{
+    background-color: #313131;
+    opacity: .6;
+    height: 38px;
+    border: none;
+}
+#newsletter form input{
+    border-radius: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 6px 12px 5px;
+    font-size: 14px;
+    
+}
