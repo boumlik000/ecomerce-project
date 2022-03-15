@@ -12,5 +12,8 @@ $(function () {
     $('.add-to-cart-btn').click(function(){
         alert('add the product to the pocket');
     });
+
+    $('#copyright').text("جميع الحقوق محفوظة للمتجر لسنة "+ new Date().getFullYear());
+
 })
 

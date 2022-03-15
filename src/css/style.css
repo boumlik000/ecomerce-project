@@ -66,6 +66,9 @@ body{
 .custom-dropdown-menu .checkbox label input{
     margin-left: 5px;
 }
+.custom-dropdown-menu li:last-of-type{
+    margin-top: 0px !important;
+}
 .custom-navbar .search-btn{
     background-color: #ff3956;
     border-color: #ff3956;
@@ -186,8 +189,8 @@ body{
 }
 .custom-carousel-indicators-primary{
     top: 255px;
-    right: 23%;
-    /* right: 400px; */
+    left: 15%;
+    
 }
 .custom-carousel-indicators-primary  img{
     height: 55px;
@@ -320,6 +323,7 @@ h3.custom-heading{
 .custom-thumbnail img{
     height: 250px;
     width: 100%;
+    margin: 0 auto;
     max-width: 250px;
 }
 /*popular marks*/
@@ -465,4 +469,170 @@ input[type=email]::placeholder{
     padding: 6px 12px 5px;
     font-size: 14px;
     
+}
+#footer-copyright-social{
+    background-color: #151515;
+    color: #303030;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+#footer-copyright-social a{
+    color: #303030;
+    margin: 0 5px;
+}
+/*------------------------------------------
+-------boujour-------------media querry-----
+--------------------------------------------*/
+@media(max-width:1400px){
+    .custom-carousel-indicators-primary{
+        top: 255px;
+        /* left: 15%; */
+        left: 100px;
+    }
+}
+@media(max-width:1199px){
+    .custom-navbar .navbar-nav li a.nav-link{
+        padding: 5px;
+        
+    }
+    .custom-carousel-indicators-primary{
+        top: 255px;
+        /* left: 15%; */
+        left: 50px;
+    }
+    /**/
+    #store-features.offset-3{
+        margin-right: 200px !important;
+    }
+    
+}
+@media (max-width:991px) and (min-width:768px) {
+    .custom-thumbnail img{
+        height: 200px;
+        
+    }
+}
+@media(max-width:991px){
+    .custom-navbar{
+        padding: 15px 20px 30px;
+    }
+    .navbar-header{
+        display: block;
+        width: 100%;
+        margin-bottom: 22px;
+    }
+    .custom-navbar .container{
+        max-width: 100%;
+    }
+    .navbar-header .btn-icon{
+        float: left;
+    }
+    .form-inline{
+        width: 100%;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    .form-inline .dropdown{
+        display: none;
+    }
+    .form-inline .custom-form-control{
+        width: 90%;
+    }
+    .form-inline .search-btn{
+        width: 10%;
+    }
+    .custom-navbar a.btn-icon,
+    .custom-navbar button.btn-icon{
+        color: #777;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 5px 10px 4px;
+        background-color: transparent;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .custom-navbar .navbar-nav li a.nav-link{
+        padding: 10px 15px;
+    }
+    .navbar-collapse{
+        border-top: 1px solid #eee;
+        margin-top: 15px;
+        padding-top: 8px;
+    }
+
+    /**/
+    .overlay{
+        display: none;
+    }
+    .custom-thumbnail .add-to-cart-btn{
+        background-color: #fff;
+        color: #868686;
+        font-weight: normal;
+    }
+    .custom-thumbnail img{
+        height: 200px;
+    }
+    /**/
+    #store-features.offset-3{
+        margin-right: 100px !important;
+    }
+    /*footer cpy*/
+    #copyright, #social-icons{
+        text-align: center;
+        width: 100%;
+    }
+    #social-icons{
+        font-size: 150%;
+        margin-top: 10px;
+    }
+}   
+@media(max-width:767px){
+    #carousel-featured,#carousel-featured .product-details{
+        height: auto;
+    }
+    #carousel-featured .product-details{
+        position: static;
+    }
+    #carousel-featured{
+        padding-bottom: 25px;
+    }
+    #carousel-featured .carousel-item img{
+        height: 250px;
+    }
+    #store-features.offset-3{
+        margin-right: 0px !important;
+    }
+    #brand-logos img{
+        max-width: 50px;
+        max-height: 50px;
+        margin: 5px 24px 5px 23px;
+    }
+    #footer-nav .footer-logo{
+        margin-bottom: 30px;
+    }
+    #footer-nav form{
+        max-width: 100%;
+        width: 100%;
+    }
+    #newsletter form .input-group{
+        width: 100%;
+    }
+    
+}
+@media(max-width:575px){
+    .form-inline .custom-form-control{
+        width: 80%;
+    }
+    .form-inline .search-btn{
+        width: 20%;
+    }
+    #carousel-featured .carousel-item{
+        padding: 0px 18px;
+    }
+    /*footer*/
+    #footer #footer-logos .img-container img{
+        margin: 5px 15px;
+    }
 }
