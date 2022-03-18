@@ -189,7 +189,7 @@ body{
 }
 .custom-carousel-indicators-primary{
     top: 255px;
-    left: 15%;
+    right: 40%;
     
 }
 .custom-carousel-indicators-primary  img{
@@ -481,14 +481,156 @@ input[type=email]::placeholder{
     color: #303030;
     margin: 0 5px;
 }
+/*-----------------------------------------
+-------------------------------------------
+boujour -----------------------------------
+-------------------------------------------
+---------------------------product page----
+-------------------------------------------*/
+/*bredcrumb*/
+.custom-breadcrumb{
+    background-color: transparent;
+    padding: 25px 0;
+}
+.custom-breadcrumb a{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-weight: bold;
+}
+.custom-breadcrumb a:hover{
+    color: #f8ad47;
+}
+.custom-breadcrumb>li+li::before{
+    content: '>';
+    color: #555;
+    padding: 0 5px;
+}
+.custom-breadcrumb .active{
+    color: #bfbfbf;
+}
+/*carousel-details*/
+#carousel-product-images .carousel-indicators{
+    position: relative;
+    top: -35px;
+    right: 0;
+}
+
+#carousel-product-images .carousel-item img{
+    border: 1px solid #EBEBEB;
+    width: 100%;  
+}
+.breadcrumb-section .carousel-slide-2.offset-1{
+    margin-right: 8.3%;
+}
+/*product-details*/
+.block-100{
+    width: 100%;
+    display: block;
+}
+.product-category{
+    color: #a9a9a9;
+}
+#form-product-selection h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 18px 0 18px;
+}
+.price.large{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.borders-between>div+div{
+    border-top: 1px solid #EBEBEB;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.product-option{
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    color: #c2c2c2;
+    margin: 3px 3px 9px 3px;
+}
+.product-option input {
+    display: none;
+}
+.product-option label {
+    font-weight: 700;
+    display: block;
+}
+.product-option.active{
+    color: #f8ad47;
+    border-color: #f8ad47;
+}
+.color-option{
+    border-color: #fff;
+    outline: #000 solid 1px;
+}
+.product-contity select{
+    width: 56px;
+    height: 34px !important;
+    padding: 6px 12px;
+    margin-right: 3px;
+}
+.product-contity .label{
+    padding-top: 10px;
+}
+.product-contity{
+    padding-bottom: 20px;
+}
+.custom-btn-with-icon{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+}
+.heading-with-border-bottom{
+    border-bottom: 3px solid #ebebeb;
+    padding-bottom: 15px;
+}
+.heading-inline{
+    display: inline-block;
+    min-width: 250px;
+}
+/*description*/
+.more-description p,
+.more-description ul{
+    margin-bottom: 10px;
+}
+/*comments*/
+.comments .media{
+    margin: 15px;
+}
+.comments .media img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border: 1px solid #dfdfdf;
+}
+.comments .media .media-heading{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+/*sugg*/
+.suggestions .custom-thumbnail{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+
 /*------------------------------------------
 -------boujour-------------media querry-----
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
 --------------------------------------------*/
 @media(max-width:1400px){
     .custom-carousel-indicators-primary{
         top: 255px;
         /* left: 15%; */
-        left: 100px;
+        
     }
 }
 @media(max-width:1199px){
@@ -499,7 +641,7 @@ input[type=email]::placeholder{
     .custom-carousel-indicators-primary{
         top: 255px;
         /* left: 15%; */
-        left: 50px;
+        
     }
     /**/
     #store-features.offset-3{
@@ -587,6 +729,14 @@ input[type=email]::placeholder{
         font-size: 150%;
         margin-top: 10px;
     }
+    /*product-option*/
+    .product-option{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        font-size: 20px;
+    }
 }   
 @media(max-width:767px){
     #carousel-featured,#carousel-featured .product-details{
@@ -634,5 +784,10 @@ input[type=email]::placeholder{
     /*footer*/
     #footer #footer-logos .img-container img{
         margin: 5px 15px;
+    }
+    /*product page*/
+    #form-product-selection, .comments{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 import './css/style.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min';
@@ -14,6 +14,12 @@ $(function () {
     });
 
     $('#copyright').text("جميع الحقوق محفوظة للمتجر لسنة "+ new Date().getFullYear());
+
+
+    $('.product-option input[type="radio"]').change(function(){
+        $(this).parents('.product-option').siblings().removeClass('active');
+        $(this).parents('.product-option').addClass('active');
+    })
 
 })
 
