@@ -104,6 +104,10 @@ module.exports={
 			filename:"checkout.html",
 			template:"./src/checkout.html",
 		}),
+		new HtmlWebpackPlugin({
+			filename:"payement.html",
+			template:"./src/payement.html",
+		}),
 
 		new MiniCssExtractPlugin({filename: 'css/style.css'}),
 		new OptimizeCSSAssetsPlugin({}),
