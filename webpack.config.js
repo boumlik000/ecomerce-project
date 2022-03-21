@@ -108,6 +108,11 @@ module.exports={
 			filename:"payement.html",
 			template:"./src/payement.html",
 		}),
+		new HtmlWebpackPlugin({
+			filename:"search.html",
+			template:"./src/search.html",
+		}),
+		
 
 		new MiniCssExtractPlugin({filename: 'css/style.css'}),
 		new OptimizeCSSAssetsPlugin({}),

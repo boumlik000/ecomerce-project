@@ -4,6 +4,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import '@fortawesome/fontawesome-free/js/all.min';
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
+
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
@@ -106,6 +109,20 @@ $(function () {
 
         $('#credit-card-info').toggle();
     });
+/**jquerry slider */
+$( function() {
+    $( "#price-range" ).slider({
+      range: true,
+      min: 0,
+      max: 1000,
+      values: [ 250, 800 ],
+      slide: function( event, ui ) {
+        $( "#price-min" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#price-max" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
 
 });
 
