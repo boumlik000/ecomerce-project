@@ -791,6 +791,41 @@ h1.custom-heading{
     margin: 25px 0;
 }
 /*------------------------------------------
+-------boujour-------------page contact-----
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------*/
+#map{
+    padding: 0%;
+}
+#contact-options h4{
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.heading-with-border-bottom {
+    margin-bottom: 20px;
+    
+}
+#contact-info{
+    margin-bottom: 25px;
+}
+#contact-info .fa-lg{
+    color: #f3af41;
+    font-size: 18px;
+    margin: 10px 10px 7px 10px;
+    width: 25px;
+    text-align: center;
+}
+#contact-options textarea{
+    height: 128px !important;
+}
+
+
+
+
+
+/*------------------------------------------
 -------boujour-------------media querry-----
 --------------------------------------------
 --------------------------------------------
@@ -913,7 +948,12 @@ h1.custom-heading{
         width: 20px !important;
         top: -10px !important;
     }
+    /*contact page*/
+    #form-subscription{
+        margin-bottom: 40px;
+    }
 }   
+
 @media(max-width:767px){
     #carousel-featured,#carousel-featured .product-details{
         height: auto;
