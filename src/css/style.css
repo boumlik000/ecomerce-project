@@ -635,6 +635,10 @@ h1.custom-heading{
     font-size: 120%;
     
 }
+
+.custom-table th:not(:first-child), .custom-table td:not(:first-child){
+    text-align: center;
+}
 .custom-table th:first-child, .custom-table td:first-child{
     width: 50%;
 }
@@ -753,6 +757,7 @@ h1.custom-heading{
     border-radius: 50%;
     height: 12px !important;
     width: 12px !important;
+    top: -6px !important;
 }
 .ui-slider .ui-slider-range{
     border: 1px  solid #f8ad47 !important;
@@ -942,12 +947,7 @@ h1.custom-heading{
         line-height: 40px;
         font-size: 20px;
     }
-    /*search-page slider*/
-    .ui-slider .ui-slider-handle{
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
-    }
+    
     /*contact page*/
     #form-subscription{
         margin-bottom: 40px;
